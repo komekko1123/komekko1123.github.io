@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<section class="hero-band">
+  <div class="wrap">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1 class="slogan">
+          WELCOME TO <span>ROSA LAB</span>
+        </h1>
+
+        <h2 class="hero-title"><span class="hero-title__accent">ROSA</span> Lab: Optimization, Social Analytics</h2>
+
+        <div class="introduction">
+          {{ content }}
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="{{ '/assets/img/hero.webp' | prepend: site.baseurl }}" alt="ROSA LAB group photo">
+      </div>
+    </section>
+  </div>
+</section>
+
+<section class="home-band home-band--muted">
+  <div class="wrap">
+    <div class="home-section home-section--wide">
+      <div class="section-heading">
+        <span class="section-heading__bar"></span>
+        <h2>Latest News</h2>
+        <p>Check the latest updates from ROSA LAB</p>
+      </div>
+
+      <div class="news-grid">
+        {% include list_news_cards.html limit=3 %}
+      </div>
+
+      <a class="section-button" href="{{ '/news' | prepend: site.baseurl }}">See More</a>
+    </div>
+  </div>
+</section>
+
+<section class="home-band">
+  <div class="wrap">
+    <div class="home-section home-section--wide">
+      <div class="section-heading">
+        <span class="section-heading__bar"></span>
+        <h2>Research Themes</h2>
+        <p>Discover the core directions of ROSA LAB</p>
+      </div>
+
+      <div class="theme-grid">
+        <a class="theme-card" href="{{ '/publications' | prepend: site.baseurl }}">
+          <strong>Graph Theory</strong>
+          <span>Structured models and network reasoning</span>
+        </a>
+        <a class="theme-card" href="{{ '/publications' | prepend: site.baseurl }}">
+          <strong>Optimization</strong>
+          <span>Combinatorial and practical problem solving</span>
+        </a>
+        <a class="theme-card" href="{{ '/publications' | prepend: site.baseurl }}">
+          <strong>Social Analytics</strong>
+          <span>Data-driven understanding of complex systems</span>
+        </a>
+        <a class="theme-card" href="{{ '/publications' | prepend: site.baseurl }}">
+          <strong>Applications</strong>
+          <span>Real-world impact through computational methods</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

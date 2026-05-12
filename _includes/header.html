@@ -1,0 +1,24 @@
+<header class="header">
+  <div class="wrap">
+    <a class="logo" href="{{ site.baseurl }}/">
+      <span class="logo-mark">
+        <img src="{{ '/assets/img/logo.svg' | prepend: site.baseurl }}" alt="">
+      </span>
+      ROSA LAB
+    </a>
+
+    <nav class="main-nav">
+      <ul class="nav">
+        {% assign sorted_pages = site.pages | sort: "order" %}
+        {% for item in sorted_pages %}
+          {% if item.title and item.nav_hidden != true %}
+            {% assign nav_slug = item.title | slugify %}
+            <li class="{% if item.url == page.url %}active {% endif %}{% if nav_slug == 'join-us' %}nav-cta{% endif %}">
+              <a href="{{ item.url | prepend: site.baseurl }}">{{ item.title }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>

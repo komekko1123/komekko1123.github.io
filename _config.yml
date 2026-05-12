@@ -1,0 +1,24 @@
+title: ROSA LAB
+email: ""
+description: >
+  ROSA LAB is a research group focusing on graph theory and optimization in the
+  Department of Computer Science and Information Engineering at National Central
+  University (NCU).
+baseurl: ""
+url: ""
+title_image: "/assets/img/logo.svg"
+
+permalink: /:title
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+sass:
+  sass_dir: assets/style
+
+encoding: utf-8

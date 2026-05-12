@@ -1,0 +1,13 @@
+{% assign news_posts = site.categories.news %}
+{% for post in news_posts limit: include.limit %}
+  <article class="news-card">
+    <span class="news-card__tag">{{ post.label | default: "news" }}</span>
+    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    <p class="news-card__date">{{ post.date | date: "%b %-d, %Y" }}</p>
+    {% if post.summary %}
+      <p>{{ post.summary }}</p>
+    {% elsif post.excerpt %}
+      <p>{{ post.excerpt | strip_html | strip_newlines }}</p>
+    {% endif %}
+  </article>
+{% endfor %}
