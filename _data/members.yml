@@ -1,0 +1,29 @@
+professor:
+  - name: Professor Name
+#   role: Professor
+    affiliation: ROSA Lab, NCU CSIE
+    email: Rosalab@ncu.edu.tw
+    website: ""
+    photo: /assets/img/logo.svg
+
+ms_students:
+  - name: Student Name
+    role: M.S. Student
+#   affiliation: ROSA Lab
+    email: Rosalab@ncu.edu.tw
+    website: ""
+    photo: /assets/img/logo.svg
+
+  - name: Student Name
+    role: M.S. Student
+#   affiliation: ROSA Lab
+    email: Rosalab@ncu.edu.tw
+    website: ""
+    photo: /assets/img/logo.svg
+
+  - name: Student Name
+    role: M.S. Student
+#   affiliation: ROSA Lab
+    email: Rosalab@ncu.edu.tw
+    website: ""
+    photo: /assets/img/logo.svg

@@ -5,8 +5,10 @@ layout: default
 <div class="wrap">
   <section class="news-page">
     <h1 class="page-title">{{ page.title }}</h1>
-    <div class="news-list">
-      {% include list_news.html %}
+    <div class="timeline">
+      <div class="timeline__stem"></div>
+      <div class="timeline__dot"></div>
+      {% include list_news_timeline.html %}
     </div>
   </section>
 </div>

@@ -10,7 +10,12 @@ layout: default
           WELCOME TO <span>ROSA LAB</span>
         </h1>
 
-        <h2 class="hero-title"><span class="hero-title__accent">ROSA</span> Lab: Optimization, Social Analytics</h2>
+        <h2 class="hero-title">
+          <span class="hero-title__accent">R</span>esearch on
+          <span class="hero-title__accent">O</span>ptimization,
+          <span class="hero-title__accent">S</span>ocial
+          <span class="hero-title__accent">A</span>nalytics
+        </h2>
 
         <div class="introduction">
           {{ content }}
@@ -52,22 +57,18 @@ layout: default
       </div>
 
       <div class="theme-grid">
-        <a class="theme-card" href="{{ '/publications' | prepend: site.baseurl }}">
+        <div class="theme-card">
           <strong>Graph Theory</strong>
           <span>Structured models and network reasoning</span>
-        </a>
-        <a class="theme-card" href="{{ '/publications' | prepend: site.baseurl }}">
+        </div>
+        <div class="theme-card">
           <strong>Optimization</strong>
           <span>Combinatorial and practical problem solving</span>
-        </a>
-        <a class="theme-card" href="{{ '/publications' | prepend: site.baseurl }}">
+        </div>
+        <div class="theme-card">
           <strong>Social Analytics</strong>
           <span>Data-driven understanding of complex systems</span>
-        </a>
-        <a class="theme-card" href="{{ '/publications' | prepend: site.baseurl }}">
-          <strong>Applications</strong>
-          <span>Real-world impact through computational methods</span>
-        </a>
+        </div>
       </div>
     </div>
   </div>

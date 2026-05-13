@@ -1,0 +1,65 @@
+---
+layout: default
+---
+
+<div class="wrap">
+  <section class="member-page">
+    <h1 class="page-title">{{ page.title }}</h1>
+
+    <section class="member-section">
+      <h2 class="member-section__title">Professor</h2>
+      <div class="member-grid member-grid--professor">
+        {% for person in site.data.members.professor %}
+          <article class="member-card member-card--professor">
+            <div class="member-card__photo">
+              <img src="{{ person.photo | prepend: site.baseurl }}" alt="{{ person.name }}">
+            </div>
+            <h3 class="member-card__name">{{ person.name }}</h3>
+            <p class="member-card__meta">{{ person.role }}</p>
+            <p class="member-card__meta">{{ person.affiliation }}</p>
+            <div class="member-card__actions">
+              {% if person.email %}
+                <a class="member-icon" href="mailto:{{ person.email }}" aria-label="Email {{ person.name }}">
+                  <span class="member-icon__symbol">✉</span>
+                </a>
+              {% endif %}
+              {% if person.website %}
+                <a class="member-icon" href="{{ person.website }}" aria-label="Website of {{ person.name }}">
+                  <span class="member-icon__symbol">⌂</span>
+                </a>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="member-section">
+      <h2 class="member-section__title">M.S. Students</h2>
+      <div class="member-grid">
+        {% for person in site.data.members.ms_students %}
+          <article class="member-card">
+            <div class="member-card__photo">
+              <img src="{{ person.photo | prepend: site.baseurl }}" alt="{{ person.name }}">
+            </div>
+            <h3 class="member-card__name">{{ person.name }}</h3>
+            <p class="member-card__meta">{{ person.affiliation }}</p>
+            <p class="member-card__meta">{{ person.role }}</p>
+            <div class="member-card__actions">
+              {% if person.email %}
+                <a class="member-icon" href="mailto:{{ person.email }}" aria-label="Email {{ person.name }}">
+                  <span class="member-icon__symbol">✉</span>
+                </a>
+              {% endif %}
+              {% if person.website %}
+                <a class="member-icon" href="{{ person.website }}" aria-label="Website of {{ person.name }}">
+                  <span class="member-icon__symbol">⌂</span>
+                </a>
+              {% endif %}
+            </div>
+          </article>
+        {% endfor %}
+      </div>
+    </section>
+  </section>
+</div>

@@ -1,0 +1,17 @@
+- title: Student recruitment for ROSA LAB
+  date: 2026-02-01
+  label: Opportunity
+  summary: We are inviting students interested in graph theory, optimization, and data-driven problem solving to join our lab 
+  # image: /assets/img/hero.webp
+  status:
+    - Open
+
+- title: New lab members of 2025
+  date: 2025-08-30
+  label: news
+  summary: We are happy to welcome new members to our lab.
+
+- title: ROSA LAB Open!
+  date: 2025-07-01
+  label: News
+  summary: The new NCU Graph Optimization of Social analysis Lab has officially opened.

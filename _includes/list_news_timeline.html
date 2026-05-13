@@ -1,0 +1,32 @@
+{% assign news_items = site.data.news | sort: "date" | reverse %}
+{% for post in news_items %}
+  <article class="timeline-item {% cycle 'timeline-item--left', 'timeline-item--right' %}">
+    <div class="timeline-item__line"></div>
+    <div class="timeline-card">
+      <div class="timeline-card__header">
+        <div class="timeline-card__badges">
+          {% if post.label %}
+            <span class="timeline-card__badge">{{ post.label }}</span>
+          {% endif %}
+          {% if post.status %}
+            {% for state in post.status %}
+              <span class="timeline-card__badge timeline-card__badge--muted">{{ state }}</span>
+            {% endfor %}
+          {% endif %}
+        </div>
+      </div>
+
+      <div class="timeline-card__media {% unless post.image %}timeline-card__media--logo{% endunless %}">
+        {% if post.image %}
+          <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}">
+        {% else %}
+          <img src="{{ '/assets/img/logo.svg' | prepend: site.baseurl }}" alt="ROSA LAB logo">
+        {% endif %}
+      </div>
+
+      <h2 class="timeline-card__title">{{ post.title }}</h2>
+      <p class="timeline-card__date">{{ post.date | date: "%b %-d, %Y" }}</p>
+      <p class="timeline-card__summary">{{ post.summary }}</p>
+    </div>
+  </article>
+{% endfor %}

@@ -1,13 +1,18 @@
-{% assign news_posts = site.categories.news %}
-{% for post in news_posts limit: include.limit %}
+{% assign news_items = site.data.news | sort: "date" | reverse %}
+{% for post in news_items limit: include.limit %}
   <article class="news-card">
-    <span class="news-card__tag">{{ post.label | default: "news" }}</span>
-    <h3><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+    <div class="news-card__media {% unless post.image %}news-card__media--logo{% endunless %}">
+      {% if post.image %}
+        <img src="{{ post.image | prepend: site.baseurl }}" alt="{{ post.title }}">
+      {% else %}
+        <img src="{{ '/assets/img/logo.svg' | prepend: site.baseurl }}" alt="ROSA LAB logo">
+      {% endif %}
+    </div>
+    <span class="news-card__tag">{{ post.label | default: "News" }}</span>
+    <h3>{{ post.title }}</h3>
     <p class="news-card__date">{{ post.date | date: "%b %-d, %Y" }}</p>
     {% if post.summary %}
       <p>{{ post.summary }}</p>
-    {% elsif post.excerpt %}
-      <p>{{ post.excerpt | strip_html | strip_newlines }}</p>
     {% endif %}
   </article>
 {% endfor %}
