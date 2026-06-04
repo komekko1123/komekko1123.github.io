@@ -778,7 +778,7 @@ h2 {
 
 .hero-title {
   font-size: 2.15rem;
-  margin-bottom: calc(1rem * 1rem);
+  margin-bottom: 1rem;
   color: #111;
 }
 

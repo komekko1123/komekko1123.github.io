@@ -1,29 +1,36 @@
 professor:
-  - name: Professor Name
+  - name: 洪慧儒
 #   role: Professor
     affiliation: ROSA Lab, NCU CSIE
-    email: Rosalab@ncu.edu.tw
-    website: ""
-    photo: /assets/img/logo.svg
+    email:  hjhung@ncu.edu.tw
+    website: https://hjhung.github.io/
+    photo: /assets/img/Professor.jpg
 
 ms_students:
-  - name: Student Name
+  - name: 陳奕
     role: M.S. Student
 #   affiliation: ROSA Lab
-    email: Rosalab@ncu.edu.tw
-    website: ""
+    email: eason.jshouse0725@gmail.com
+#    website: ""
     photo: /assets/img/logo.svg
 
-  - name: Student Name
+  - name: 陳建宇
     role: M.S. Student
 #   affiliation: ROSA Lab
-    email: Rosalab@ncu.edu.tw
-    website: ""
+    email: ching90265@gmail.com
+#    website: ""
     photo: /assets/img/logo.svg
 
-  - name: Student Name
+  - name: 黃育柔
     role: M.S. Student
 #   affiliation: ROSA Lab
-    email: Rosalab@ncu.edu.tw
-    website: ""
+    email: a0989060670@gmail.com
+ #   website: ""
+    photo: /assets/img/logo.svg
+
+  - name: 巫年巨
+    role: M.S. Student
+#   affiliation: ROSA Lab
+    email: yy911123@gmail.com
+    website: https://github.com/komekko1123
     photo: /assets/img/logo.svg
