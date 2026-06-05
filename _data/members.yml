@@ -4,7 +4,7 @@ professor:
     affiliation: ROSA Lab, NCU CSIE
     email:  hjhung@ncu.edu.tw
     website: https://hjhung.github.io/
-    photo: /assets/img/Professor.jpg
+    photo: /assets/img/professor.jpg
 
 ms_students:
   - name: 陳奕
